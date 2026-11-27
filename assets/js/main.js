@@ -1,5 +1,5 @@
 // ==========================================================================
-// VÕ TRÍ VIỄN - STATIC WEBSITE INTERACTIONS
+// NGUYỄN ANH KHOA - STATIC WEBSITE INTERACTIONS
 // ==========================================================================
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 2. Project Category Filter (du-an.html)
+  // 2. Activity Category Filter (hoat-dong.html)
   const filterButtons = document.querySelectorAll('.filter-btn');
   const projectCards = document.querySelectorAll('.project-card');
 
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 4. Static Contact Form Submission Feedback (lien-he.html)
+  // 4. Static Contact Form Feedback (lien-he.html)
   const contactForm = document.getElementById('contactForm');
   const formFeedback = document.getElementById('formFeedback');
 
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', () => {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const senderName = document.getElementById('senderName').value.trim();
-      formFeedback.textContent = `Cảm ơn ${senderName || 'bạn'} đã gửi lời nhắn! Tin nhắn đã được ghi nhận trên giao diện demo — mình sẽ phản hồi sớm nhất nhé.`;
+      formFeedback.textContent = `Cảm ơn ${senderName || 'bạn'} đã nhắn cho Khoa! Lời nhắn đã được ghi nhận trên giao diện demo — mình sẽ check ngay sau buổi họp CLB hoặc giờ tập nhảy nhé.`;
       formFeedback.classList.add('show');
       contactForm.reset();
     });
